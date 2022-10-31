@@ -1,0 +1,176 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+  z-index: 6;
+  overflow: hidden;
+
+  &.open {
+    bottom: 470px;
+
+    & > .logoLink {
+      bottom: 25vh;
+    }
+
+    & > .quote {
+      top: 50px;
+    }
+
+    & > .bohr {
+      top: 100px;
+    }
+  }
+
+  .quote {
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 370px;
+    text-align: center;
+    z-index: 6;
+    transition: 0.7s ease;
+  }
+
+  .bohr {
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 370px;
+    text-align: center;
+    font-style: italic;
+    z-index: 6;
+    transition: 0.7s ease;
+  }
+
+  .logoLink {
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    right: -44vh;
+    bottom: 37vh;
+    rotate: -90deg;
+    z-index: 6;
+    transition: 0.7s ease;
+
+    .logo {
+      width: 100vh;
+      height: auto;
+      filter: contrast(0%) brightness(200%);
+      transition: 0.7s ease;
+
+      &:hover {
+        filter: contrast(100%) brightness(100%);
+      }
+    }
+  }
+}
+
+.navButton {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  outline: none;
+  background: #ffffff;
+  color: #1c2e64;
+  border: none;
+  border-radius: 50%;
+  transition: 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+  z-index: 9;
+
+  i {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 17px;
+    margin: 0;
+    transition: 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+    opacity: 1;
+
+    &.open {
+      opacity: 0;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    bottom: 30px;
+
+    & > i {
+      top: 27px;
+    }
+  }
+
+  &.open {
+    bottom: 370px;
+
+    &:hover {
+      cursor: pointer;
+      width: 80px;
+      height: 80px;
+      bottom: 360px;
+    }
+  }
+}
+
+.navMenu {
+  position: absolute;
+  bottom: -7vh;
+  height: 470px;
+  background-color: #1c2e64;
+  width: 100vw;
+  z-index: -1;
+  transition: 0.7s ease;
+
+  &.open {
+    bottom: 0;
+  }
+
+  .navWrapper {
+    display: flex;
+    margin-top: 140px;
+    padding-top: 70px;
+
+    a {
+      position: relative;
+      transition: 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+      margin-left: 104px;
+      color: white;
+
+      &.active {
+        font-weight: 600;
+      }
+
+      &:hover {
+        scale: 1.1;
+      }
+
+      p {
+        position: absolute;
+        margin: auto;
+      }
+
+      img {
+        width: 350px;
+        height: 200px;
+      }
+    }
+  }
+}

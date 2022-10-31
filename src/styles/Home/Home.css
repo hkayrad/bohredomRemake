@@ -1,0 +1,158 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+  z-index: 6;
+  overflow: hidden;
+}
+.main.open {
+  bottom: 470px;
+}
+.main.open > .logoLink {
+  bottom: 25vh;
+}
+.main.open > .quote {
+  top: 50px;
+}
+.main.open > .bohr {
+  top: 100px;
+}
+.main .quote {
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 370px;
+  text-align: center;
+  z-index: 6;
+  transition: 0.7s ease;
+}
+.main .bohr {
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 370px;
+  text-align: center;
+  font-style: italic;
+  z-index: 6;
+  transition: 0.7s ease;
+}
+.main .logoLink {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  right: -44vh;
+  bottom: 37vh;
+  rotate: -90deg;
+  z-index: 6;
+  transition: 0.7s ease;
+}
+.main .logoLink .logo {
+  width: 100vh;
+  height: auto;
+  filter: contrast(0%) brightness(200%);
+  transition: 0.7s ease;
+}
+.main .logoLink .logo:hover {
+  filter: contrast(100%) brightness(100%);
+}
+
+.navButton {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  outline: none;
+  background: #ffffff;
+  color: #1c2e64;
+  border: none;
+  border-radius: 50%;
+  transition: 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+  z-index: 9;
+}
+.navButton i {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 17px;
+  margin: 0;
+  transition: 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+  opacity: 1;
+}
+.navButton i.open {
+  opacity: 0;
+}
+.navButton:hover {
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  bottom: 30px;
+}
+.navButton:hover > i {
+  top: 27px;
+}
+.navButton.open {
+  bottom: 370px;
+}
+.navButton.open:hover {
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  bottom: 360px;
+}
+
+.navMenu {
+  position: absolute;
+  bottom: -7vh;
+  height: 470px;
+  background-color: #1c2e64;
+  width: 100vw;
+  z-index: -1;
+  transition: 0.7s ease;
+}
+.navMenu.open {
+  bottom: 0;
+}
+.navMenu .navWrapper {
+  display: flex;
+  margin-top: 140px;
+  padding-top: 70px;
+}
+.navMenu .navWrapper a {
+  position: relative;
+  transition: 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-left: 104px;
+  color: white;
+}
+.navMenu .navWrapper a.active {
+  font-weight: 600;
+}
+.navMenu .navWrapper a:hover {
+  scale: 1.1;
+}
+.navMenu .navWrapper a p {
+  position: absolute;
+  margin: auto;
+}
+.navMenu .navWrapper a img {
+  width: 350px;
+  height: 200px;
+}/*# sourceMappingURL=Home.css.map */

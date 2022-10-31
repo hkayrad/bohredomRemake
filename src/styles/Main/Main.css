@@ -1,0 +1,80 @@
+.about {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+.about.open > img {
+  top: 3vh;
+}
+.about.open > .title {
+  top: 10vh;
+}
+.about.open > .desc {
+  top: 10vh;
+}
+.about.open > .author {
+  top: 55vh;
+}
+.about img {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  transition: 0.7s ease;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.7s ease;
+}
+.about .title {
+  position: absolute;
+  color: white;
+  font-size: 130px;
+  font-weight: 700;
+  rotate: 90deg;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  bottom: 0;
+  top: 0;
+  transition: 0.7s ease;
+}
+.about .title.abt {
+  left: -16vh;
+}
+.about .title.twomass {
+  left: -17vh;
+}
+.about .desc {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  width: 40vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: justify;
+  top: -10vh;
+  bottom: 0;
+  margin: auto;
+  line-height: 45px;
+  left: 15vw;
+  transition: 0.7s ease;
+}
+.about .author {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  top: 40vh;
+  bottom: 0;
+  margin: auto;
+  right: 15vw;
+  transition: 0.7s ease;
+}/*# sourceMappingURL=Main.css.map */
