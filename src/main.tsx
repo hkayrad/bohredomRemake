@@ -8,6 +8,8 @@ import Root from "./Root";
 import Home from "./routes/Home";
 import About from "./components/About";
 import TwoMass from "./components/TwoMass";
+import Fermi from "./components/Fermi";
+import Iras from "./components/Iras";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,14 @@ const router = createBrowserRouter([
           {
             path: "/two-mass",
             element: <TwoMass />,
+          },
+          {
+            path: "/fermi",
+            element: <Fermi />,
+          },
+          {
+            path: "/iras",
+            element: <Iras />,
           },
         ],
       },

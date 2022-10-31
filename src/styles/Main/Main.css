@@ -25,6 +25,12 @@
   z-index: -1;
   transition: 0.7s ease;
 }
+.about img.fermi {
+  filter: brightness(0.5);
+}
+.about img.iras {
+  filter: brightness(0.3);
+}
 .about .title {
   position: absolute;
   color: white;
@@ -43,10 +49,16 @@
   transition: 0.7s ease;
 }
 .about .title.abt {
-  left: -16vh;
+  left: -145px;
 }
 .about .title.twomass {
-  left: -17vh;
+  left: -155px;
+}
+.about .title.fermi {
+  left: -137px;
+}
+.about .title.iras {
+  left: -74px;
 }
 .about .desc {
   position: absolute;
@@ -63,6 +75,9 @@
   line-height: 45px;
   left: 15vw;
   transition: 0.7s ease;
+}
+.about .desc.desc-twomass, .about .desc.desc-fermi, .about .desc.desc-iras {
+  top: 0vh;
 }
 .about .author {
   position: absolute;

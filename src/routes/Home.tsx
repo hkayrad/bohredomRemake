@@ -23,6 +23,12 @@ export default class Home extends React.Component<Props, State> {
     });
   };
 
+  close = () => {
+    this.setState({
+      navState: false,
+    });
+  };
+
   render() {
     return (
       <>
@@ -60,22 +66,40 @@ export default class Home extends React.Component<Props, State> {
         <div className={this.state.navState ? "navMenu open" : "navMenu"}>
           <div className="navWrapper">
             <NavLink
-              onClick={this.openClose}
+              onClick={this.close}
               className={({ isActive }) => (isActive ? "active" : "")}
               to="/"
               end
             >
-              <p>About</p>
+              <p className="desc">About</p>
               <img src="/img/aboutBg.webp" alt="" />
             </NavLink>
             <NavLink
-              onClick={this.openClose}
+              onClick={this.close}
               className={({ isActive }) => (isActive ? "active" : "")}
               to="/two-mass/"
               end
             >
-              <p>2Mass</p>
+              <p className="desc">2Mass</p>
               <img src="/img/2mass.webp" alt="" />
+            </NavLink>
+            <NavLink
+              onClick={this.close}
+              className={({ isActive }) => (isActive ? "active" : "")}
+              to="/fermi/"
+              end
+            >
+              <p className="desc">Fermi</p>
+              <img src="/img/fermi.webp" alt="" />
+            </NavLink>
+            <NavLink
+              onClick={this.close}
+              className={({ isActive }) => (isActive ? "active" : "")}
+              to="/iras/"
+              end
+            >
+              <p className="desc">Iras</p>
+              <img src="/img/iras.webp" alt="" />
             </NavLink>
           </div>
         </div>

@@ -134,7 +134,7 @@
 .navMenu .navWrapper {
   display: flex;
   margin-top: 140px;
-  padding-top: 70px;
+  padding-top: 50px;
 }
 .navMenu .navWrapper a {
   position: relative;
@@ -145,14 +145,24 @@
 .navMenu .navWrapper a.active {
   font-weight: 600;
 }
+.navMenu .navWrapper a.active > img {
+  border: 2px white solid;
+}
 .navMenu .navWrapper a:hover {
   scale: 1.1;
 }
 .navMenu .navWrapper a p {
   position: absolute;
-  margin: auto;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: start;
+  align-items: flex-end;
+  padding: 0 0 20px 20px;
+  font-size: 35px;
 }
 .navMenu .navWrapper a img {
   width: 350px;
   height: 200px;
+  border: 2px rgba(255, 255, 255, 0) solid;
 }/*# sourceMappingURL=Home.css.map */
