@@ -14,7 +14,7 @@ interface State {
 export default class Home extends React.Component<Props, State> {
   constructor(props: any) {
     super(props);
-    this.state = { navState: true };
+    this.state = { navState: false };
   }
 
   openClose = () => {
