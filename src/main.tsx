@@ -9,6 +9,7 @@ import "./styles/main.css";
 //* routes / components
 import Home from "./routes/Home";
 import Telescopes from "./routes/Telescopes";
+import Error from "./routes/Error";
 
 import About from "./components/About";
 import TwoMass from "./components/TwoMass";
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",

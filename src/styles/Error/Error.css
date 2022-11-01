@@ -1,0 +1,16 @@
+.error {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c2e64;
+}
+.error h2 {
+  font-size: 60px;
+  color: #fff;
+}
+.error a {
+  color: #fff;
+}/*# sourceMappingURL=Error.css.map */
