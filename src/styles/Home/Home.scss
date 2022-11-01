@@ -147,12 +147,28 @@
     display: flex;
     margin-top: 140px;
     padding-top: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 30px;
+
+    &::-webkit-scrollbar {
+      height: 5px; /* height of horizontal scrollbar ← You're missing this */
+    }
+
+    &::-webkit-scrollbar-thumb:horizontal {
+      background: #fff;
+      border-radius: 10px;
+    }
 
     a {
       position: relative;
       transition: 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
-      margin-left: 104px;
+      margin-left: 94px;
       color: white;
+
+      &:nth-last-child(1) {
+        margin-right: 94px;
+      }
 
       &.active {
         font-weight: 600;

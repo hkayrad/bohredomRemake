@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .main {
   width: 100vw;
   height: 100vh;
@@ -135,12 +136,25 @@
   display: flex;
   margin-top: 140px;
   padding-top: 50px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-bottom: 30px;
+}
+.navMenu .navWrapper::-webkit-scrollbar {
+  height: 5px; /* height of horizontal scrollbar ← You're missing this */
+}
+.navMenu .navWrapper::-webkit-scrollbar-thumb:horizontal {
+  background: #fff;
+  border-radius: 10px;
 }
 .navMenu .navWrapper a {
   position: relative;
   transition: 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
-  margin-left: 104px;
+  margin-left: 94px;
   color: white;
+}
+.navMenu .navWrapper a:nth-last-child(1) {
+  margin-right: 94px;
 }
 .navMenu .navWrapper a.active {
   font-weight: 600;

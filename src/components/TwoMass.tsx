@@ -1,4 +1,4 @@
-import { useOutletContext } from "react-router-dom";
+import { NavLink, useOutletContext } from "react-router-dom";
 import "../styles/Main/Main.css";
 
 export default function TwoMass() {
@@ -14,6 +14,9 @@ export default function TwoMass() {
         (for the Northern Hemisphere), and one at the Cerro Tololo
         Inter-American Observatory, Chile (for the Southern Hemisphere).
       </p>
+      <NavLink className="exploreBtn" to="/telescopes/two-mass">
+        Explore
+      </NavLink>
       <img src="/img/2mass.webp" alt="" />
     </div>
   );

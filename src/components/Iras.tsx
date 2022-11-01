@@ -1,4 +1,4 @@
-import { useOutletContext } from "react-router-dom";
+import { NavLink, useOutletContext } from "react-router-dom";
 import "../styles/Main/Main.css";
 
 export default function Iras() {
@@ -16,6 +16,9 @@ export default function Iras() {
         superfluid helium that chilled the structure down to 10 K (−263 °C, or
         −442 °F) and the detector to 2 K (−271 °C, or −456 °F).
       </p>
+      <NavLink className="exploreBtn" to="/telescopes/iras">
+        Explore
+      </NavLink>
       <img className="iras" src="/img/iras.webp" alt="" />
     </div>
   );

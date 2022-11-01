@@ -87,7 +87,9 @@
     &.desc-twomass,
     &.desc-fermi,
     &.desc-iras {
-      top: 0vh;
+      left: 0vw;
+      right: 0;
+      top: -12vh;
     }
   }
 
@@ -102,5 +104,22 @@
     margin: auto;
     right: 15vw;
     transition: 0.7s ease;
+  }
+
+  .exploreBtn {
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 30px;
+    border: 1px white solid;
+    transition: 0.7s ease;
+    right: 30vw;
+    top: 65vh;
+
+    &:hover {
+      background-color: white;
+      color: #1c2e64;
+    }
   }
 }

@@ -77,7 +77,9 @@
   transition: 0.7s ease;
 }
 .about .desc.desc-twomass, .about .desc.desc-fermi, .about .desc.desc-iras {
-  top: 0vh;
+  left: 0vw;
+  right: 0;
+  top: -12vh;
 }
 .about .author {
   position: absolute;
@@ -92,4 +94,19 @@
   margin: auto;
   right: 15vw;
   transition: 0.7s ease;
+}
+.about .exploreBtn {
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px 30px;
+  border: 1px white solid;
+  transition: 0.7s ease;
+  right: 30vw;
+  top: 65vh;
+}
+.about .exploreBtn:hover {
+  background-color: white;
+  color: #1c2e64;
 }/*# sourceMappingURL=Main.css.map */

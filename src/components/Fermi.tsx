@@ -1,4 +1,4 @@
-import { useOutletContext } from "react-router-dom";
+import { NavLink, useOutletContext } from "react-router-dom";
 import "../styles/Main/Main.css";
 
 export default function Fermi() {
@@ -16,6 +16,9 @@ export default function Fermi() {
         Energy, and government agencies in France, Germany, Italy, Japan, and
         Sweden, becoming the most sensitive gamma-ray telescope on orbit.
       </p>
+      <NavLink className="exploreBtn" to="/telescopes/fermi">
+        Explore
+      </NavLink>
       <img className="fermi" src="/img/fermi.webp" alt="" />
     </div>
   );
