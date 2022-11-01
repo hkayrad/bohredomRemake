@@ -29,6 +29,15 @@ export default class Home extends React.Component<Props, State> {
     });
   };
 
+  horizontalScroll = (event: any) => {
+    const delta = Math.max(
+      -1,
+      Math.min(1, event.nativeEvent.wheelDelta || -event.nativeEvent.detail)
+    );
+    event.currentTarget.scrollLeft -= delta * 100;
+    event.preventDefault;
+  };
+
   render() {
     return (
       <>
@@ -64,7 +73,7 @@ export default class Home extends React.Component<Props, State> {
           ></i>
         </button>
         <div className={this.state.navState ? "navMenu open" : "navMenu"}>
-          <div className="navWrapper">
+          <div className="navWrapper" onWheel={this.horizontalScroll}>
             <NavLink
               onClick={this.close}
               className={({ isActive }) => (isActive ? "active" : "")}
