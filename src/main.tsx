@@ -15,9 +15,6 @@ import About from "./components/About";
 import TwoMass from "./components/TwoMass";
 import Fermi from "./components/Fermi";
 import Iras from "./components/Iras";
-import FermiTelescope from "./components/FermiTelescope";
-import IrasTelescope from "./components/IrasTelescope";
-import TwoMassTelescope from "./components/TwoMassTelescope";
 
 const router = createBrowserRouter([
   {
@@ -49,15 +46,12 @@ const router = createBrowserRouter([
     children: [
       {
         path: "iras",
-        element: <IrasTelescope />,
       },
       {
         path: "fermi",
-        element: <FermiTelescope />,
       },
       {
         path: "two-mass",
-        element: <TwoMassTelescope />,
       },
     ],
   },

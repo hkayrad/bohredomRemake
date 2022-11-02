@@ -1,0 +1,7 @@
+.telescopes a {
+  position: absolute;
+  color: white;
+  z-index: 2;
+  top: 25px;
+  left: 25px;
+}/*# sourceMappingURL=Telescopes.css.map */

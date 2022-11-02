@@ -110,24 +110,6 @@ export default class Home extends React.Component<Props, State> {
               <p className="desc">Iras</p>
               <img src="/img/iras.webp" alt="" />
             </NavLink>
-            <NavLink
-              onClick={this.close}
-              className={({ isActive }) => (isActive ? "active" : "")}
-              to="/iras/"
-              end
-            >
-              <p className="desc">Iras</p>
-              <img src="/img/iras.webp" alt="" />
-            </NavLink>
-            <NavLink
-              onClick={this.close}
-              className={({ isActive }) => (isActive ? "active" : "")}
-              to="/iras/"
-              end
-            >
-              <p className="desc">Iras</p>
-              <img src="/img/iras.webp" alt="" />
-            </NavLink>
           </div>
         </div>
       </>
