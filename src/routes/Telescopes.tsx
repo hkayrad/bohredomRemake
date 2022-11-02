@@ -28,7 +28,9 @@ export default function Telescopes() {
       <div id="view" style={{ width: "100vw", height: "100vh" }}>
         <ReactPhotoSphereViewer
           src={"/img/" + source}
+          // @ts-ignore
           height={"100vh"}
+          // @ts-ignore
           width={"100vw"}
           container={""}
           navbar={[]}
