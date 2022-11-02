@@ -73,6 +73,16 @@ export default class Home extends React.Component<Props, State> {
           ></i>
         </button>
         <div className={this.state.navState ? "navMenu open" : "navMenu"}>
+          <a className="author" href="https://hkayrad.me" target="_blank">
+            redesigned by hkayrad
+          </a>
+          <a
+            className="git-link"
+            href="https://github.com/Bohredom/bohredomRemake"
+            target="_blank"
+          >
+            <i className="fa-brands fa-github fa-3x"></i>
+          </a>
           <div className="navWrapper" onWheel={this.horizontalScroll}>
             <NavLink
               onClick={this.close}
@@ -109,6 +119,15 @@ export default class Home extends React.Component<Props, State> {
             >
               <p className="desc">Iras</p>
               <img src="/img/iras.webp" alt="" />
+            </NavLink>
+            <NavLink
+              onClick={this.close}
+              className={({ isActive }) => (isActive ? "active" : "")}
+              to="/unit-converter/"
+              end
+            >
+              <p className="desc">Unit Converter</p>
+              <img src="/img/aboutBg.webp" alt="" />
             </NavLink>
           </div>
         </div>

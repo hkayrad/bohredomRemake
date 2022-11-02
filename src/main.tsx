@@ -15,6 +15,7 @@ import About from "./components/About";
 import TwoMass from "./components/TwoMass";
 import Fermi from "./components/Fermi";
 import Iras from "./components/Iras";
+import UC from "./components/UnitConverter";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "iras",
         element: <Iras />,
+      },
+      {
+        path: "unit-converter",
+        element: <UC />,
       },
     ],
   },

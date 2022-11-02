@@ -60,6 +60,10 @@
 .about .title.iras {
   left: -74px;
 }
+.about .title.uc {
+  font-size: 100px;
+  left: -316px;
+}
 .about .desc {
   position: absolute;
   color: white;
@@ -77,9 +81,16 @@
   transition: 0.7s ease;
 }
 .about .desc.desc-twomass, .about .desc.desc-fermi, .about .desc.desc-iras {
-  left: 0vw;
+  left: 0;
   right: 0;
   top: -12vh;
+}
+.about .desc.desc-uc {
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 45px;
 }
 .about .author {
   position: absolute;

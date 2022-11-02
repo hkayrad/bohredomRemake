@@ -68,6 +68,11 @@
     &.iras {
       left: -74px;
     }
+
+    &.uc {
+      font-size: 100px;
+      left: -316px;
+    }
   }
 
   .desc {
@@ -87,9 +92,17 @@
     &.desc-twomass,
     &.desc-fermi,
     &.desc-iras {
-      left: 0vw;
+      left: 0;
       right: 0;
       top: -12vh;
+    }
+
+    &.desc-uc {
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-weight: 700;
+      font-size: 45px;
     }
   }
 
