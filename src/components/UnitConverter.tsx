@@ -12,24 +12,28 @@ const c: number = 299792458;
 //TODO: Implement unit conversion
 
 export default function UC() {
-  const [inputValue, setInptValue] = useState(0);
-  const [unit, setUnit] = useState("");
+  const [value, setValue] = useState(0);
+  const [unit, setUnit] = useState("eV");
   const navState = useOutletContext();
 
   return (
     <div className={navState ? "about open" : "about"}>
       <h3 className="title uc">Unit Converter</h3>
-      <form className="unitConverter">
+      <form action="" className="unitConverter">
+        <label htmlFor="value">Enter a value:</label>
+
         <div className="wrapper">
-          <label htmlFor="value">Enter a value:</label>
-          <input type="value" name="value" className="value" />
+          <input type="number" name="value" className="value" />
+          <select name="unit" className="unit">
+            <option value="eV">eV</option>
+            <option value="Hz">Hz</option>
+            <option value="lambda">λ</option>
+          </select>
         </div>
-        <select name="unit" className="unit">
-          <option value="eV">eV</option>
-          <option value="Hz">Hz</option>
-          <option value="lambda">λ</option>
-        </select>
-        <p className="valueOutput"></p>
+        <button>Convert</button>
+        <p className="valueOutput">
+          {value},{unit}
+        </p>
       </form>
       <img src="/img/aboutBg.webp" alt="" />
     </div>
