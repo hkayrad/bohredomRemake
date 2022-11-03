@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import "../styles/Main/Main.css";
 
@@ -11,12 +12,25 @@ const c: number = 299792458;
 //TODO: Implement unit conversion
 
 export default function UC() {
+  const [inputValue, setInptValue] = useState(0);
+  const [unit, setUnit] = useState("");
   const navState = useOutletContext();
 
   return (
     <div className={navState ? "about open" : "about"}>
       <h3 className="title uc">Unit Converter</h3>
-      <p className="desc desc-uc">Not Implemented Yet</p>
+      <form className="unitConverter">
+        <div className="wrapper">
+          <label htmlFor="value">Enter a value:</label>
+          <input type="value" name="value" className="value" />
+        </div>
+        <select name="unit" className="unit">
+          <option value="eV">eV</option>
+          <option value="Hz">Hz</option>
+          <option value="lambda">λ</option>
+        </select>
+        <p className="valueOutput"></p>
+      </form>
       <img src="/img/aboutBg.webp" alt="" />
     </div>
   );

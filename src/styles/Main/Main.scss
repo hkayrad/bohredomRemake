@@ -96,14 +96,6 @@
       right: 0;
       top: -12vh;
     }
-
-    &.desc-uc {
-      left: 0;
-      right: 0;
-      text-align: center;
-      font-weight: 700;
-      font-size: 45px;
-    }
   }
 
   .author {
@@ -134,5 +126,12 @@
       background-color: white;
       color: #1c2e64;
     }
+  }
+
+  .unitConverter {
+    display: flex;
+    position: absolute;
+    color: white;
+    top: 10vh;
   }
 }

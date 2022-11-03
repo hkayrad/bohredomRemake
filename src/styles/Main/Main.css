@@ -85,13 +85,6 @@
   right: 0;
   top: -12vh;
 }
-.about .desc.desc-uc {
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-weight: 700;
-  font-size: 45px;
-}
 .about .author {
   position: absolute;
   color: white;
@@ -120,4 +113,10 @@
 .about .exploreBtn:hover {
   background-color: white;
   color: #1c2e64;
+}
+.about .unitConverter {
+  display: flex;
+  position: absolute;
+  color: white;
+  top: 10vh;
 }/*# sourceMappingURL=Main.css.map */
