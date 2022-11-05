@@ -39,7 +39,21 @@ export default function Telescopes() {
 
   return (
     <div className="telescopes">
-      <NavLink to={from}>
+      <div className="nav">
+        <h3 className="title">Change Telescope</h3>
+        <div className="links">
+          <NavLink onClick={window.location.reload} to="/telescopes/two-mass">
+            2Mass
+          </NavLink>
+          <NavLink onClick={window.location.reload} to="/telescopes/iras">
+            Iras
+          </NavLink>
+          <NavLink onClick={window.location.reload} to="/telescopes/fermi">
+            Fermi
+          </NavLink>
+        </div>
+      </div>
+      <NavLink className="back" to={from}>
         {" "}
         <i className="fa-solid fa-arrow-left fa-2x"></i>
       </NavLink>

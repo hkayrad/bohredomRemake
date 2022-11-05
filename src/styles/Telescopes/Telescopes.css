@@ -1,4 +1,59 @@
-.telescopes a {
+.telescopes {
+  color: #1c2e64;
+}
+.telescopes .nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: white;
+  z-index: 2;
+  width: 300px;
+  height: 325px;
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
+  -webkit-clip-path: circle(10% at 100% 0);
+          clip-path: circle(10% at 100% 0);
+  transition: 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.telescopes .nav:hover {
+  width: 300px;
+  height: 325px;
+  -webkit-clip-path: circle(194.3% at 100% 0);
+          clip-path: circle(194.3% at 100% 0);
+}
+.telescopes .nav h3.title {
+  position: absolute;
+  font-size: 24px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  left: 0;
+  right: 0;
+}
+.telescopes .nav .links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 76px;
+  width: 250px;
+  margin-left: 25px;
+}
+.telescopes .nav .links a {
+  color: #1c2e64;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 75px;
+  border: #1c2e64 2px solid;
+  transition: 0.4s ease;
+}
+.telescopes .nav .links a:hover, .telescopes .nav .links a:focus {
+  box-shadow: inset -13em 0 0 0 #1c2e64;
+  color: white;
+}
+.telescopes a.back {
   position: absolute;
   color: white;
   z-index: 2;
