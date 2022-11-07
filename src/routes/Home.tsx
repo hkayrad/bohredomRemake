@@ -77,6 +77,13 @@ export default class Home extends React.Component<Props, State> {
             redesigned by hkayrad
           </a>
           <a
+            className="old"
+            href="https://bohredom-2020.web.app"
+            target="_blank"
+          >
+            click here to go to the old website
+          </a>
+          <a
             className="git-link"
             href="https://github.com/Bohredom/bohredomRemake"
             target="_blank"

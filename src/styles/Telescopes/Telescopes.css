@@ -3,32 +3,38 @@
 }
 .telescopes .nav {
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
   background-color: white;
   z-index: 2;
-  width: 300px;
+  width: 360px;
   height: 325px;
   overflow: hidden;
-  border-bottom-left-radius: 10px;
-  -webkit-clip-path: circle(10% at 100% 0);
-          clip-path: circle(10% at 100% 0);
+  border-bottom-right-radius: 10px;
+  -webkit-clip-path: circle(10% at 0 0);
+          clip-path: circle(10% at 0 0);
   transition: 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .telescopes .nav:hover {
-  width: 300px;
+  width: 360px;
   height: 325px;
-  -webkit-clip-path: circle(194.3% at 100% 0);
-          clip-path: circle(194.3% at 100% 0);
+  -webkit-clip-path: circle(194.3% at 0 0);
+          clip-path: circle(194.3% at 0 0);
 }
-.telescopes .nav h3.title {
+.telescopes .nav .wrapper {
+  display: flex;
+  width: 260px;
   position: absolute;
-  font-size: 24px;
-  text-align: center;
-  margin: auto;
+  justify-content: space-between;
   margin-top: 20px;
-  left: 0;
-  right: 0;
+  margin-left: 20px;
+}
+.telescopes .nav .wrapper a.back {
+  color: #1c2e64;
+  text-decoration: none;
+}
+.telescopes .nav .wrapper h3.title {
+  font-size: 24px;
 }
 .telescopes .nav .links {
   display: flex;
@@ -36,10 +42,10 @@
   gap: 20px;
   justify-content: center;
   margin-top: 76px;
-  width: 250px;
-  margin-left: 25px;
+  width: 260px;
+  margin-left: 50px;
 }
-.telescopes .nav .links a {
+.telescopes .nav a.navLink {
   color: #1c2e64;
   font-size: 20px;
   font-weight: 500;
@@ -49,14 +55,7 @@
   border: #1c2e64 2px solid;
   transition: 0.4s ease;
 }
-.telescopes .nav .links a:hover, .telescopes .nav .links a:focus {
-  box-shadow: inset -13em 0 0 0 #1c2e64;
+.telescopes .nav a.navLink:hover, .telescopes .nav a.navLink:focus {
+  box-shadow: inset 13em 0 0 0 #1c2e64;
   color: white;
-}
-.telescopes a.back {
-  position: absolute;
-  color: white;
-  z-index: 2;
-  top: 25px;
-  left: 25px;
 }/*# sourceMappingURL=Telescopes.css.map */
