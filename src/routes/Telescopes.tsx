@@ -40,23 +40,36 @@ export default function Telescopes() {
   return (
     <div className="telescopes">
       <div className="nav">
-        <h3 className="title">Change Telescope</h3>
+        <div className="wrapper">
+          <NavLink className="back" to={from}>
+            <i className="fa-solid fa-arrow-left fa-2x"></i>
+          </NavLink>
+          <h3 className="title">Change Telescope</h3>
+        </div>
         <div className="links">
-          <NavLink onClick={window.location.reload} to="/telescopes/two-mass">
+          <NavLink
+            className="navLink"
+            onClick={window.location.reload}
+            to="/telescopes/two-mass"
+          >
             2Mass
           </NavLink>
-          <NavLink onClick={window.location.reload} to="/telescopes/iras">
+          <NavLink
+            className="navLink"
+            onClick={window.location.reload}
+            to="/telescopes/iras"
+          >
             Iras
           </NavLink>
-          <NavLink onClick={window.location.reload} to="/telescopes/fermi">
+          <NavLink
+            className="navLink"
+            onClick={window.location.reload}
+            to="/telescopes/fermi"
+          >
             Fermi
           </NavLink>
         </div>
       </div>
-      <NavLink className="back" to={from}>
-        {" "}
-        <i className="fa-solid fa-arrow-left fa-2x"></i>
-      </NavLink>
       <div id="view" style={{ width: "100vw", height: "100vh" }}>
         <ReactPhotoSphereViewer
           src={"/img/" + source}
